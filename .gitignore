@@ -4,6 +4,5 @@ npm-debug.*
 coverage
 overflow
 data
-build
 tags
 test/browser/bundle.js
