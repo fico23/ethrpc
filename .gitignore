@@ -5,6 +5,5 @@ coverage
 overflow
 data
 build
-dist
 tags
 test/browser/bundle.js
