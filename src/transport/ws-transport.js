@@ -65,7 +65,7 @@ WsTransport.prototype.connect = function (initialCallback) {
     if (event && event.code !== 1000) {
       console.info("websocket", self.address, "closed:", event.code, event.reason);
       Object.keys(self.disconnectListeners).forEach(function (key) { self.disconnectListeners[key](event); });
-      if (!initialCallbackCalled) callback(new Error("Web socket closed without opening, usually means failed connection."));
+      callback(new Error("Web socket closed."));
     }
   };
 };
